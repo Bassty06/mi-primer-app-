@@ -7,13 +7,17 @@ import Saludar from "./src/components/saludar";
 import FormMeetYou from "./src/components/FormMeetYou";
 import { useState } from "react";
 import NavigationStack from "./src/Navigation/NavigationStack";
+import NavigationTab from "./src/Navigation/NavigationTab";
+import NavigatorDrawer from "./src/Navigation/NavigationDrawer";
 
 export default function App() {
   const [name, setName] = useState("");
 
   return (
     <NavigationContainer>
-      <NavigationStack />
+      <NavigatorDrawer />
+      {/* <NavigationTab /> */}
+      {/* <NavigationStack /> */}
       {/* <View style={styles.container}>
         <FormMeetYou name={name} setName={setName} />
         <Saludar name={name} />
